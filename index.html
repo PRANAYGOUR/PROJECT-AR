@@ -35,37 +35,134 @@
     debugUIEnabled: false;"
     gesture-detector create-buttons>
   
-    <!-- Camera -->
+<!-- Camera -->
     <a-entity camera></a-entity>
 
     <a-assets>
-      <img id="my-image" src="assetes/Barbedwire1.jpeg">
-      <img id="detail-wire1" src="assetes/barbedwiredetails.png">   
-       <a-asset-item id="wire" src="./assetes/garden/scene.gltf">
+      <img id="wire1" src="assetes/Barbedwire1.jpeg">
+      <img id="detail-wire1" src="assetes/barbedwiredetails.png"> 
+      <img id="wire2" src="assetes/gichainlink.png"  >
+      <img id="detail-wire2" src="assetes/gichainlinkdetails.png">
+      <img id="wire3" src="assetes/pvcchainlink.png">
+      <img id="detail-wire3" src="assetes/pvcchainlinkdetails.png">
+      <img id="wire4" src="assetes/neonwire.png">
+      <img id="detail-wire4" src="assetes/neonwiredetails.png">
+      <img id="wire5" src="assetes/platsicfencing.png">
+      <img id="detail-wire5" src="assetes/platsicfencingdetails.png">
+      <img id="wire6" src="assetes/weldmesh.png">
+      <img id="detail-wire6" src="assetes/weldmeshdetails.png">
+      <img id="wire7" src="assetes/cc.png">
+      <img id="detail-wire7" src="assetes/ccdetails.png">
+<!--model-->
+       <a-asset-item id="wire" src="assetes/field/scene.gltf">
        </a-asset-item>  
     </a-assets>
-    <!--Pattern Marker-->
+
+
+
+
+    
+
+<!--pattern wire model-->
+<a-marker id="wire-marker-model" type="pattern" url="markers/wire/pattern-wire.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-entity id="wire-3D-model" position="0 0 0.2" scale="0.2 0.2 0.2" rotation="0 270 90" gltf-model="#wire" 
+  gesture-handler>
+</a-entity>
+</a-marker>
+
+
+
+
+
+
+<!--Pattern Marker1-->
     <a-marker id="wire-marker1" type="pattern" url="markers/wire1/pattern-wire1.patt" cursor="rayOrigin: mouse"
       markerhandler>
-   
-    </a-entity>
-      <!-- wire Model -->
-      <a-image src="#my-image" position="-3 0 0.1" scale="2.5 2.5 2.5" rotation="270 0 0"></a-image>
-      <a-image src="#detail-wire1" position="0 0 0" scale="2.5 2.5 2.5" rotation="270 0 0">
-
+      <a-image src="#wire1" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+      <a-image src="#detail-wire1" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
       </a-image>
     </a-marker>
-    <a-marker id="wire-marker-model" type="pattern" url="markers/wire/pattern-Picture2.patt" cursor="rayOrigin: mouse"
-    markerhandler>
-  <a-entity id="wire-3D-model" position="-2 0 0" scale="0.3 0.5 0.5" rotation="0 270 90" gltf-model="#wire" 
-      gesture-handler>
-  </a-entity>
-    
-  </a-marker>
-  </a-scene>
+
+
+
+
+
+
+
+
+<!--pattern-wire2-->
+  <a-marker id="wire-marker2" type="pattern" url="markers/wire2/pattern-wire2.patt" cursor="rayOrigin: mouse"
+      markerhandler>
+      <a-image src="#wire2" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+      <a-image src="#detail-wire2" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+      </a-image>
+    </a-marker>
 
   
 
+<!--pattern-wire3-->
+<a-marker id="wire-marker3" type="pattern" url="markers/wire3/pattern-wire3.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-image src="#wire3" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+<a-image src="#detail-wire3" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+</a-image>
+</a-marker>
+
+
+
+
+
+
+<!--pattern-wire4-->
+<a-marker id="wire-marker4" type="pattern" url="markers/wire4/pattern-wire4.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-image src="#wire4" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+<a-image src="#detail-wire4" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+</a-image>
+</a-marker>
+  
+
+
+
+
+
+<!--pattern-wire5-->
+<a-marker id="wire-marker5" type="pattern" url="markers/wire6/pattern-wire6.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-image src="#wire5" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+<a-image src="#detail-wire5" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+</a-image>
+</a-marker>
+  
+
+
+
+
+
+<!--pattern-wire6-->
+<a-marker id="wire-marker6" type="pattern" url="markers\wire5\pattern-wire5.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-image src="#wire6" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+<a-image src="#detail-wire6" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+</a-image>
+</a-marker>
+ 
+
+
+
+<!--pattern-wire7-->
+<a-marker id="wire-marker7" type="pattern" url="markers\wire7\pattern-wire7.patt" cursor="rayOrigin: mouse"
+markerhandler>
+<a-image src="#wire7" position="-1.3 0 0.1" scale="2 2 2" rotation="270 0 0"></a-image>
+<a-image src="#detail-wire7" position="0.5 0.5 0" scale="1.5 1.5 1.5" rotation="270 0 0">
+</a-image>
+</a-marker>
+
+
+
+
+</a-scene> 
 </body>
 
 </html>
